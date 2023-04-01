@@ -6,10 +6,11 @@
     display: block;
     -webkit-filter: drop-shadow(0 0 0.45rem var(--img-bg-shadow));
     filter: drop-shadow(0 0 0.45rem var(--img-bg-shadow));
-}
+}*/
 :root {
-    --img-bg-shadow: #08f84c;
-} */
+  --category-link-img-fruits: #f8ff375d;
+  --category-link-vegetables: #7aff375d;
+}
 
 .top-nav-link{
  color: black;
@@ -27,7 +28,7 @@
     background-size: 100%;
 }
 
-.dropdown-menu,
+.nav-dropdown-ul,
 nav{
     background: linear-gradient(120deg, #eefff9 0%, #eefff9 10%,  #d5fff0 50%,#c6f4e4 90%, #c6f4e4 20%);
 }
@@ -43,30 +44,65 @@ nav{
     top: 0;
 }
 
-
-.nav-underline {
-    --bs-nav-underline-gap: 1rem;
-    --bs-nav-underline-border-width: 0.125rem;
-    --bs-nav-underline-link-active-color: var(--bs-emphasis-color);
-    gap: var(--bs-nav-underline-gap);
-  }
-  .nav-underline .nav-link {
-    padding-right: 0;
-    padding-left: 0;
-    border-bottom: var(--bs-nav-underline-border-width) solid transparent;
-  }
-  .nav-underline .nav-link:hover, .nav-underline .nav-link:focus {
-    border-bottom-color: #029eff !important;
-  }
-  .nav-underline .nav-link.active,
-  .nav-underline .show > .nav-link {
-    font-weight: 700;
-    color: var(--bs-nav-underline-link-active-color);
-    border-bottom-color: #029eff !important;
-  }
+/* category section */
   .category-link{
     color: #000;
     text-decoration: none;
     font-size: 12px !important;
 
   }
+  .tarn-zoom{
+    transition: transform .2s ease-in-out;
+     overflow: hidden;
+  }
+  .tarn-zoom:hover{
+    transform: scale(1.2);
+  }
+  .category{
+    transition: transform .2s ease-in-out;
+  }
+  .category:hover{
+      transform: scale(1.2);
+  }
+.category-link-img-fruits:hover{
+  transition: .3s ease-in-out;
+    -webkit-filter: drop-shadow(0 0 0.45rem var(--category-link-img-fruits));
+    filter: drop-shadow(0 0 0.45rem var(--category-link-img-fruits));
+}
+.category-link-vegetables:hover{
+  transition: .3s ease-in-out;
+    -webkit-filter: drop-shadow(0 0 0.45rem var(--category-link-vegetables));
+    filter: drop-shadow(0 0 0.45rem var(--category-link-vegetables));
+}
+
+/* category section on sm & sx */
+
+.drp-btn{
+  display: block;
+  background-color: #ffffff00;
+  outline: none !important;
+}
+.ul-drp-menu{
+  text-align: center;
+
+}
+
+.vign-cato,
+.meat-cato{
+  border: 1px solid #f1f1f1 !important;
+  margin: 1px;
+}
+.vign-cato-link{
+  background-color: #edffee;
+}
+.vign-cato:hover{
+  background-color: #edffee;
+  transition: .3s ease-in;
+}
+.meat-cato-link{
+  background-color: #ffeded; 
+}
+.meat-cato:hover{
+  background-color: #ffeded;
+  transition: .3s ease-in;
+}
