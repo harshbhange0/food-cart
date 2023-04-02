@@ -4,20 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/log-in.css">
-    <title>log_in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <title>Document</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+    body{
+        background-image: url(../img/log_in/—Pngtree—fresh\ fruit\ and\ vegetable\ breakfast_949037.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+        height: 1rem;
+    }
+    .shadow-sm {
+        background-color: #ffffffb0;
+    }
+</style>
 </head>
-<body>
-    <div class="login-container-main">
-        <div class="login-form">
-            <form class="form">
-                <input type="text" placeholder="User Name" class="form-input">
-                <input type="password" placeholder="Password" class="form-input">
-                <button class="sub-btn">Log In</button>
-            </form>
-            <span class="singin-link-text"> Not a member? <a href="./singup.html">Sing up now</a></span>
-        </div>
 
+<body class="h-100">
+    <div class="container-fluid ">
+        <div class="container  rounded-5 shadow-sm w-50 m-auto mt-5 main-container-fluid m-5 p-5 justify-content-center align-content-center ">
+            <div class="col">
+            <div class="form-floating my-5">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email / User Name</label>
+                </div>
+                <div class="form-floating my-5">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                  <button class="btn m-auto d-block w-25  border-1 shadow-sm bg-body-secondary ">Log In</button>
+                <span class=" d-block m-3">
+                  <a href="#">Forgot Password </a>
+                </span>
+                <span class=" d-block m-3 ">
+                  Don't have an account? <a href="#"> Sign in here?</a>
+                </span>
+            </div>  
+            </div>
+        </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
